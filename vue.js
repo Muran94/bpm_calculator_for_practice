@@ -15,9 +15,9 @@ var vm = new Vue({
   methods: {
     calc: function() {
       this.bpm_list = []; // 一度リストをリセットする
-      for (var mul_num = 0.5; mul_num <= 2.0; mul_num += 0.25) {
+      for (var mul_num = 0.6; mul_num <= 2.0; mul_num += 0.2) {
         this.bpm_list.push({
-          speed: mul_num.toFixed(2) + "倍速",
+          speed: mul_num.toFixed(1) + "倍速",
           bpm: Math.round(this.original_bpm * mul_num),
           done: false
         })
