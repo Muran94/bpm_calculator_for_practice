@@ -10,40 +10,21 @@ body {
   height: 200px;
   margin: 50px auto;
 }
-#metronome {
-  padding: 20px;
-}
-#metronome_bpm_disp {
-  width: 200px;
-  height: 200px;
-  line-height: 200px;
-  margin: 0 auto;
-  font-size: 32px;
-  border-radius: 50%;
-  background: linear-gradient(#05FBFF, #00abad);
-}
 #bpm_calc_app table{
   margin: 20px auto;
-}
-#bpm_calc_app tr {
-  padding: 5px;
 }
 #bpm_calc_app td {
   padding: 5px 20px;
   border: 1px solid #05FBFF;
-  background: rgba(255, 255, 255, 0.1);
 }
 #bpm_calc_app input[type="text"] {
   color: #777;
   letter-spacing: 3px;
   padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 2px;
   border: 1px solid #05fbff;
   text-align: center;
   font-size: 16px;
   font-weight: bold;
-  background: rgba(255, 255, 255, 0.1);
 }
 #bpm_calc_app .checkbox {
   cursor: pointer;
