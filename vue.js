@@ -16,7 +16,7 @@ var vm = new Vue({
   methods: {
     calc: function() {
       this.bpm_list = []; // 一度リストをリセットする
-      if (this.original_bpm.match(/^[0-9]{1,3}$/)) {
+      if (this.original_bpm.match(/^[[0-9]{0,3}$/)) {
         this.invalid = false;
       } else {
         this.invalid = true;
