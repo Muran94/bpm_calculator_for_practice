@@ -41,3 +41,6 @@ body {
 #bpm_calc_app .done {
   background: #05fbff;
 }
+#bpm_calc_app .invalid {
+  color: tomato;
+}

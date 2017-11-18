@@ -16,10 +16,11 @@
   </div>
 
   <div id="bpm_calc_app">
-    <input type="text" placeholder="BPMを入力" pattern="\d*" v-model="original_bpm" v-on:keyup="calc">
+    <input type="text" placeholder="BPMを入力" maxlength="3" pattern="\d*" v-model="original_bpm" v-on:keyup="calc()">
     <table>
       <tr is="bpm-info" v-for="bpm in bpm_list" :bpm="bpm"></tr>
     </table>
+    <p class="invalid" v-if="invalid">不正な値です。半角数値３桁までで入力してください。</p>
   </div>
 
   <script src="vue.js"></script>
